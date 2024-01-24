@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <!-- Logo -->
+        <div class="logo">BABU</div>
+
+        <!-- Hamburger Menu Button -->
+        <div class="menu-btn" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav id="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            var nav = document.getElementById("nav");
+            nav.classList.toggle("active");
+        }
+    </script>
+
+    <!-- Your page content goes here -->
+
+</body>
+</html>
